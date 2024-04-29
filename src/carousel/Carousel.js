@@ -238,13 +238,13 @@ export default class Carousel extends React.PureComponent {
     });
   }
 
-  shouldComponentUpdate(nextProps, nextState) {
-    // Check if optimizations are disabled
-    if (this.props.shouldOptimizeUpdates === false) {
-      return true; // Always update if optimizations are turned off
-    }
-    return super.shouldComponentUpdate(nextProps, nextState);
-  }
+  //   shouldComponentUpdate(nextProps, nextState) {
+  //     // Check if optimizations are disabled
+  //     if (this.props.shouldOptimizeUpdates === false) {
+  //       return true; // Always update if optimizations are turned off
+  //     }
+  //     return super.shouldComponentUpdate(nextProps, nextState);
+  //   }
 
   componentDidUpdate(prevProps) {
     const { interpolators } = this.state;
